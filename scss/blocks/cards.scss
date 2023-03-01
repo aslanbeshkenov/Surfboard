@@ -1,0 +1,53 @@
+.card__list {
+  display: flex;
+}
+
+.card__item {
+  flex: 1;
+  padding: 5px 15px;
+  margin-right: 20px;
+  position: relative;
+
+  &::before {
+    content: url("../img/Combinedshape.png");
+    position: absolute;
+    top: 60px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.card__wrap-img {
+  background: #f2f5f4;
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.card__text {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.18;
+  margin-bottom: 20px;
+}
+
+.card__desc {
+  text-align: center;
+  color: #666666;
+  font-weight: 300;
+  line-height: 1.22;
+}

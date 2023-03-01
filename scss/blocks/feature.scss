@@ -1,0 +1,24 @@
+.feature {
+  margin-bottom: 20px;
+}
+.feature__list {
+  display: flex;
+  justify-content: flex-start;
+  width: 50.7%;
+}
+
+.feature__item {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  align-items: center;
+}
+
+.feature__img-wrap {
+  margin-right: 14px;
+}
+
+.feature__text {
+  word-wrap: break-word;
+  width: 65%;
+}

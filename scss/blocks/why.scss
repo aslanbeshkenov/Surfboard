@@ -1,0 +1,24 @@
+.why {
+  height: 100vh;
+  min-height: 656px;
+  padding-top: 107px;
+}
+
+.why__block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.why__title {
+  margin-bottom: 17px;
+}
+
+.why__desc {
+  color: #666666;
+  line-height: 1.22;
+  width: 38%;
+  word-wrap: break-word;
+}
