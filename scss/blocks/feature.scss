@@ -3,8 +3,7 @@
 }
 .feature__list {
   display: flex;
-  justify-content: flex-start;
-  width: 50.7%;
+  align-items: center;
 }
 
 .feature__item {
@@ -12,6 +11,11 @@
   font-size: 16px;
   font-weight: 700;
   align-items: center;
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .feature__img-wrap {
@@ -19,6 +23,5 @@
 }
 
 .feature__text {
-  word-wrap: break-word;
-  width: 65%;
+  max-width: 90px;
 }

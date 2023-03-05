@@ -5,6 +5,7 @@
   font-size: 16px;
   line-height: 1.12;
   background-color: $yellow;
+  border-color: transparent;
   border-radius: 100px;
   text-transform: uppercase;
   transition: color 0.3s, background-color 0.3s;
@@ -14,17 +15,16 @@
     color: $yellow;
     background-color: #000000;
   }
-}
 
-.reset {
-  text-transform: none;
-  line-height: 1.22;
-  color: #ffffff;
-  background-color: inherit;
-  border: none;
-
-  &:hover {
-    color: #000000;
+  &--reset {
+    padding: 21px;
+    text-transform: none;
+    color: #ffffff;
     background-color: inherit;
+
+    &:hover {
+      color: #000000;
+      background-color: inherit;
+    }
   }
 }
