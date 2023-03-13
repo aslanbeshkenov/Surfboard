@@ -2,16 +2,21 @@
 @import "layout/normalize";
 @import "variables";
 @import "layout/base";
+@import "media";
 @import "blocks/section";
 @import "blocks/main";
 @import "blocks/btn";
 
 @import "blocks/menu";
 @import "blocks/header";
+@import "blocks/hamburger";
 @import "blocks/feature";
 @import "blocks/why";
 @import "blocks/cards";
 @import "blocks/reviews";
+@import "blocks/order-section";
 @import "blocks/form";
+@import "blocks/map";
+@import "blocks/footer";
 
 @import "blocks/fixed-menu";

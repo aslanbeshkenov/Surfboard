@@ -1,4 +1,7 @@
-.why {
+.container-why {
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .why__block {
@@ -6,11 +9,15 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-bottom: 45px;
+  margin-bottom: rem(45px);
 }
 
 .why__title {
-  margin-bottom: 17px;
+  margin-bottom: rem(17px);
+
+  @include phones {
+    margin-bottom: rem(9px);
+  }
 }
 
 .why__desc {
@@ -18,4 +25,12 @@
   line-height: 1.22;
   width: 46%;
   word-wrap: break-word;
+
+  @include tablets {
+    width: 61%;
+  }
+
+  @include phones {
+    width: 100%;
+  }
 }

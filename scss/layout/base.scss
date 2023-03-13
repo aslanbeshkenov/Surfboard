@@ -1,7 +1,10 @@
+html {
+  font-size: $baseFontSize;
+}
+
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
   font-style: normal;
-  font-size: 18px;
   font-weight: 400;
   color: #292929;
 }
@@ -17,7 +20,8 @@ html {
 }
 
 .container {
-  width: $containerWidth;
+  width: 94%;
+  max-width: $containerWidth;
   margin: 0 auto;
 }
 

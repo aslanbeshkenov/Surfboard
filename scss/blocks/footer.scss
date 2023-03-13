@@ -1,0 +1,78 @@
+.footer {
+  height: rem(86px);
+  width: 100%;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-footer {
+  color: #292929;
+  font-size: rem(21px);
+  font-weight: 400;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & a {
+    color: inherit;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: rem(14px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.vk-icon {
+  width: rem(24px);
+  height: rem(24px);
+  display: inline-block;
+  fill: red;
+
+  &:hover {
+    fill: green;
+  }
+}
+
+.facebook-icon {
+  width: rem(24px);
+  height: rem(24px);
+  display: inline-block;
+  fill: red;
+
+  &:hover {
+    fill: green;
+  }
+}
+
+.in-icon {
+  width: rem(24px);
+  height: rem(24px);
+  display: inline-block;
+  fill: red;
+
+  &:hover {
+    fill: green;
+  }
+}
+
+.tw-icon {
+  width: rem(24px);
+  height: rem(24px);
+  display: inline-block;
+  fill: red;
+
+  &:hover {
+    fill: green;
+  }
+}

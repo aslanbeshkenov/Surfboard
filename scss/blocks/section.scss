@@ -1,14 +1,18 @@
 .section {
   height: 100vh;
-  min-height: 656px;
+  min-height: rem(656px);
   display: flex;
   align-items: center;
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
   line-height: 1.21;
   text-transform: uppercase;
   text-align: center;
+
+  @include phones {
+    font-size: rem(40px);
+  }
 }

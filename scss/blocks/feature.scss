@@ -1,6 +1,11 @@
 .feature {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+
+  @include tablets {
+    display: none;
+  }
 }
+
 .feature__list {
   display: flex;
   align-items: center;
@@ -8,10 +13,10 @@
 
 .feature__item {
   display: flex;
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 700;
   align-items: center;
-  margin-right: 33px;
+  margin-right: rem(33px);
 
   &:last-child {
     margin-right: 0;
@@ -19,9 +24,9 @@
 }
 
 .feature__img-wrap {
-  margin-right: 14px;
+  margin-right: rem(14px);
 }
 
 .feature__text {
-  max-width: 90px;
+  max-width: rem(90px);
 }

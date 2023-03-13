@@ -1,10 +1,10 @@
 .btn {
-  padding: 21px 41px;
+  padding: 1.1667rem 2.2778rem;
   color: #000000;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 0.8889rem;
   line-height: 1.12;
-  background-color: $yellow;
+  background-color: $backBorderColor;
   border-color: transparent;
   border-radius: 100px;
   text-transform: uppercase;
@@ -12,12 +12,12 @@
   cursor: pointer;
 
   &:hover {
-    color: $yellow;
+    color: $backBorderColor;
     background-color: #000000;
   }
 
   &--reset {
-    padding: 21px;
+    padding: rem(21px);
     text-transform: none;
     color: #ffffff;
     background-color: inherit;
@@ -26,5 +26,9 @@
       color: #000000;
       background-color: inherit;
     }
+  }
+
+  @include phones {
+    padding: rem(21px) rem(36px);
   }
 }
