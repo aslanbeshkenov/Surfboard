@@ -52,7 +52,7 @@
   }
 
   @include phones {
-    font-size: 1.5rem;
+    font-size: rem(40px);
     line-height: 2rem;
     margin-bottom: 0.6667rem;
   }

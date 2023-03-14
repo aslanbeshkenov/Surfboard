@@ -13,6 +13,11 @@
 .logo {
   display: flex;
   margin-right: rem(46px);
+
+  &-img {
+    width: rem(55px);
+    height: rem(50px);
+  }
 }
 
 .contacts {
@@ -27,11 +32,14 @@
     color: #ffffff;
     white-space: nowrap;
   }
+}
 
-  .contacts__icon {
-    margin-right: rem(3px);
-    flex-shrink: 0;
-  }
+.phone-icon {
+  width: rem(14px);
+  height: rem(17px);
+  margin-right: rem(3px);
+  flex-shrink: 0;
+  fill: white;
 }
 
 .contacts-header {

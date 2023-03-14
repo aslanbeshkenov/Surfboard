@@ -14,8 +14,7 @@
         <div class="container container-main">
           <header class="header">
             <a href="#" class="logo">
-              <img src="img/logo.png" alt="logo" />
-              <svg class="logo">
+              <svg class="logo-img" preserveAspectRatio="xMidYMid meet">
                 <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
             </a>
@@ -45,11 +44,9 @@
               </ul>
             </nav>
             <address class="contacts contacts-header">
-              <img
-                class="contacts__icon"
-                src="img/phone_white.png"
-                alt="icon-phone"
-              />
+              <svg class="phone-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
               <a href="tel:+78009039090">8 800 903 90 90</a>
             </address>
             <a href="#" class="hamburger">
@@ -67,31 +64,29 @@
             <ul class="feature__list">
               <li class="feature__item">
                 <div class="feature__img-wrap">
-                  <img
-                    class="feature__img"
-                    src="img/serf.png"
-                    alt="icon-serf"
-                  />
+                  <svg class="serv-icon" alt="icon-serf">
+                    <use xlink:href="img/sprite.svg#serv"></use>
+                  </svg>
                 </div>
                 <div class="feature__text">Уникальный дизайн</div>
               </li>
               <li class="feature__item">
                 <div class="feature__img-wrap">
-                  <img
-                    class="feature__img"
-                    src="img/Vector.png"
-                    alt="icon-materials"
-                  />
+                  <svg class="materials-icon" alt="materials-serf">
+                    <use xlink:href="img/sprite.svg#materials"></use>
+                  </svg>
                 </div>
                 <div class="feature__text">Прочные материалы</div>
               </li>
               <li class="feature__item">
                 <div class="feature__img-wrap">
-                  <img
-                    class="feature__img"
-                    src="img/delivery.png"
+                  <svg
+                    class="delivery-icon"
+                    alt="delivery-serf"
                     alt="icon-delivery"
-                  />
+                  >
+                    <use xlink:href="img/sprite.svg#delivery"></use>
+                  </svg>
                 </div>
                 <div class="feature__text">Быстрая доставка</div>
               </li>
@@ -297,7 +292,12 @@
               <div class="contacts__place">
                 Москва, ул. Новый Арбат, д.31/12
               </div>
-              <a href="tel:+78009039090">8 800 903 90 90</a>
+              <div class="contacts-footer__wrap">
+                <svg class="phone-icon">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <a href="tel:+78009039090">8 800 903 90 90</a>
+              </div>
             </address>
             <ul class="socials">
               <li class="social__item">

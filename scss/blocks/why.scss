@@ -16,7 +16,7 @@
   margin-bottom: rem(17px);
 
   @include phones {
-    margin-bottom: rem(9px);
+    margin-bottom: rem(5px);
   }
 }
 
@@ -31,6 +31,6 @@
   }
 
   @include phones {
-    width: 100%;
+    width: 95%;
   }
 }
