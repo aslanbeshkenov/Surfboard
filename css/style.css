@@ -443,6 +443,11 @@ img {
     margin-bottom: 0.6667rem;
   }
 }
+@media screen and (max-width: 430px) {
+  .main__title {
+    font-size: 1.5555555556rem;
+  }
+}
 
 .main__text {
   font-size: 1.1666666667rem;
