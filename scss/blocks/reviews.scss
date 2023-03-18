@@ -1,6 +1,3 @@
-.reviews {
-}
-
 .reviews__title {
   margin-bottom: rem(32px);
 
@@ -18,13 +15,12 @@
 
   @include tablets {
     flex-direction: column;
-    padding: rem(56px) rem(23px) rem(22px);
-    height: rem(418px);
+    padding: rem(56px) rem(23px) rem(46px);
     margin-bottom: rem(30px);
   }
 
   @include phones {
-    height: rem(466px);
+    padding: rem(56px) rem(25px) rem(31px);
   }
 }
 
@@ -83,6 +79,11 @@
 
   @include tablets {
     width: 100%;
+    margin-bottom: rem(16px);
+  }
+
+  @include phones {
+    margin-bottom: rem(12px);
   }
 }
 
@@ -107,6 +108,11 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include phones {
+    width: rem(64px);
+    height: rem(64px);
+  }
 }
 
 .reviews__switcher-link {
@@ -124,6 +130,11 @@
       height: rem(74px);
       border: 6px solid $backBorderColor;
       box-sizing: border-box;
+
+      @include phones {
+        width: rem(64px);
+        height: rem(64px);
+      }
     }
   }
 }

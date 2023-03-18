@@ -3,6 +3,10 @@
   min-height: rem(656px);
   display: flex;
   align-items: center;
+
+  @include phones {
+    min-height: auto;
+  }
 }
 
 .section__title {

@@ -114,6 +114,7 @@
 
   @include phones {
     justify-content: center;
+    margin-bottom: rem(14px);
   }
 }
 
@@ -122,6 +123,10 @@
 
   @include tablets {
     margin-bottom: rem(38px);
+  }
+
+  @include phones {
+    margin-bottom: rem(26px);
   }
 }
 

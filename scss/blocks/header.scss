@@ -20,30 +20,10 @@
   }
 }
 
-.contacts {
-  font-style: normal;
-  color: #ffffff;
-  font-size: rem(22px);
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-
-  & a {
-    color: #ffffff;
-    white-space: nowrap;
-  }
-}
-
 .phone-icon {
   width: rem(14px);
   height: rem(17px);
   margin-right: rem(3px);
   flex-shrink: 0;
   fill: white;
-}
-
-.contacts-header {
-  @include tablets {
-    display: none;
-  }
 }

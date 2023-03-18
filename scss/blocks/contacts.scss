@@ -1,0 +1,56 @@
+.contacts {
+  font-style: normal;
+  color: #ffffff;
+  font-size: rem(22px);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+
+  & a {
+    color: #ffffff;
+    white-space: nowrap;
+  }
+}
+
+.contacts__place {
+  @include phones {
+    margin-bottom: rem(10px);
+  }
+}
+
+.contacts-header {
+  @include tablets {
+    display: none;
+  }
+}
+
+.contacts-footer {
+  color: #292929;
+  font-size: rem(21px);
+  font-weight: 400;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: rem(21px);
+
+  & .contacts-place {
+    margin-bottom: rem(14px);
+  }
+
+  & a {
+    color: inherit;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+
+    @include phones {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__wrap .phone-icon {
+    fill: #292929;
+  }
+}

@@ -1,9 +1,8 @@
 .footer {
-  height: rem(86px);
+  padding: rem(19px) 0;
   width: 100%;
   flex: 0 0 auto;
   @include phones {
-    height: rem(151px);
   }
 }
 
@@ -16,38 +15,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-}
-
-.contacts-footer {
-  color: #292929;
-  font-size: rem(21px);
-  font-weight: 400;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: rem(21px);
-
-  & .contacts-place {
-    margin-bottom: rem(14px);
-  }
-
-  & a {
-    color: inherit;
-  }
-
-  &__wrap {
-    display: flex;
-    align-items: center;
-
-    @include phones {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-
-  &__wrap .phone-icon {
-    fill: #292929;
   }
 }
 
@@ -65,12 +32,15 @@
   }
 }
 
-.vk-icon,
-.facebook-icon,
-.in-icon,
-.tw-icon {
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__icon {
   width: rem(20px);
-  height: rem(24px);
+  height: rem(20px);
   display: inline-block;
   fill: #b3b3b3;
 

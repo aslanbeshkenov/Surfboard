@@ -60,6 +60,11 @@
   }
 }
 
+.card__icon {
+  width: rem(68px);
+  height: rem(64px);
+}
+
 .card__text {
   @include phones {
     flex: 1;
