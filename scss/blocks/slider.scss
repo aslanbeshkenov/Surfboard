@@ -4,10 +4,31 @@
 }
 .slider__item {
   display: flex;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .slider__col {
   flex: 1;
+  position: relative;
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.slider__img {
+  @include tablets {
+    width: rem(306px);
+  }
+
+  @include phones {
+    width: rem(244px);
+  }
 }
 
 .slider__wrap {
@@ -24,7 +45,18 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-radius: 4px;
   padding: rem(17px) 0 rem(12px);
+
+  &:hover {
+    ~ .dropdown {
+      display: block;
+    }
+  }
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .slider__arrows {
@@ -35,6 +67,18 @@
 
 .slider__container {
   width: 78%;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 76%;
+  }
+
+  @include phones {
+    width: 85%;
+  }
 }
 
 .slider__title {
@@ -44,11 +88,21 @@
   text-transform: uppercase;
   line-height: rem(43px);
   margin-bottom: rem(24px);
+
+  @include tablets {
+    margin-bottom: rem(14px);
+    font-size: rem(30px);
+    line-height: rem(36px);
+  }
 }
 
 .slider__content {
   color: #666666;
   margin-bottom: rem(24px);
+
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .slider__rows {
@@ -80,17 +134,90 @@
   font-size: rem(60px);
   font-weight: 300;
   line-height: 60px;
+
+  @include tablets {
+    margin-right: rem(38px);
+  }
 }
 
 .slider__control {
   position: absolute;
   top: calc(50% - 23px);
+
+  @include tablets {
+    top: calc(35% - 23px);
+  }
+
+  @include phones {
+    top: calc(29% - 23px);
+  }
 }
 
 .slider__control-prev {
   left: rem(45px);
+
+  @include tablets {
+    left: 15%;
+  }
+
+  @include phones {
+    left: rem(5px);
+  }
 }
 
 .slider__control-next {
   right: rem(45px);
+
+  @include tablets {
+    right: 15%;
+  }
+
+  @include phones {
+    right: rem(5px);
+  }
+}
+
+.dropdown {
+  width: rem(273px);
+  height: rem(291px);
+  background: rgba(255, 255, 255, 0.8);
+  background-color: #d5d5d5;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(20px);
+  border-radius: 4px;
+  padding: 33px 25px 31px 30px;
+  position: absolute;
+  top: 0;
+  left: 91px;
+  display: none;
+}
+
+.dropdown__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(28px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  & span {
+    font-weight: 400;
+  }
+}
+
+.dropdown__img {
+  width: 24px;
+  height: 14px;
+  display: inline-flex;
+  margin-right: rem(16px);
+}
+
+.dropdown__text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

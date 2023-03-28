@@ -582,6 +582,48 @@ img {
   white-space: nowrap;
 }
 
+.fullscreen-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #333537;
+  height: 100vh;
+  padding: 7rem 2.3333333333rem 2.3333333333rem;
+}
+.fullscreen-menu__close {
+  position: absolute;
+  right: 3%;
+  top: 1.9444444444rem;
+  color: #ffffff;
+}
+
+.icon-close {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.menu--vertical {
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+}
+.menu--vertical .menu__list {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px;
+}
+.menu--vertical .menu__item {
+  margin-right: 0;
+  margin-bottom: 0;
+  font-size: 2rem;
+  line-height: 72px;
+}
+
 .header {
   display: flex;
   align-items: flex-start;
@@ -720,9 +762,33 @@ img {
 .slider__item {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .slider__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .slider__col {
   flex: 1;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .slider__col {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__img {
+    width: 17rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__img {
+    width: 13.5555555556rem;
+  }
 }
 
 .slider__wrap {
@@ -739,7 +805,16 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-radius: 4px;
   padding: 0.9444444444rem 0 0.6666666667rem;
+}
+.slider__wrap:hover ~ .dropdown {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .slider__wrap {
+    display: none;
+  }
 }
 
 .slider__arrows {
@@ -751,6 +826,20 @@ img {
 .slider__container {
   width: 78%;
 }
+@media screen and (max-width: 768px) {
+  .slider__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 76%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__container {
+    width: 85%;
+  }
+}
 
 .slider__title {
   color: #292929;
@@ -760,10 +849,22 @@ img {
   line-height: 2.3888888889rem;
   margin-bottom: 1.3333333333rem;
 }
+@media screen and (max-width: 768px) {
+  .slider__title {
+    margin-bottom: 0.7777777778rem;
+    font-size: 1.6666666667rem;
+    line-height: 2rem;
+  }
+}
 
 .slider__content {
   color: #666666;
   margin-bottom: 1.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__content {
+    text-align: center;
+  }
 }
 
 .slider__rows {
@@ -795,18 +896,96 @@ img {
   font-weight: 300;
   line-height: 60px;
 }
+@media screen and (max-width: 768px) {
+  .price {
+    margin-right: 2.1111111111rem;
+  }
+}
 
 .slider__control {
   position: absolute;
   top: calc(50% - 23px);
 }
+@media screen and (max-width: 768px) {
+  .slider__control {
+    top: calc(35% - 23px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__control {
+    top: calc(29% - 23px);
+  }
+}
 
 .slider__control-prev {
   left: 2.5rem;
 }
+@media screen and (max-width: 768px) {
+  .slider__control-prev {
+    left: 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__control-prev {
+    left: 0.2777777778rem;
+  }
+}
 
 .slider__control-next {
   right: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .slider__control-next {
+    right: 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider__control-next {
+    right: 0.2777777778rem;
+  }
+}
+
+.dropdown {
+  width: 15.1666666667rem;
+  height: 16.1666666667rem;
+  background: rgba(255, 255, 255, 0.8);
+  background-color: #d5d5d5;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(20px);
+  border-radius: 4px;
+  padding: 33px 25px 31px 30px;
+  position: absolute;
+  top: 0;
+  left: 91px;
+  display: none;
+}
+
+.dropdown__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5555555556rem;
+}
+.dropdown__item:last-child {
+  margin-bottom: 0;
+}
+.dropdown__item span {
+  font-weight: 400;
+}
+
+.dropdown__img {
+  width: 24px;
+  height: 14px;
+  display: inline-flex;
+  margin-right: 0.8888888889rem;
+}
+
+.dropdown__text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .card__list {
