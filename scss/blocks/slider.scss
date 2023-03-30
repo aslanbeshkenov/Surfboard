@@ -1,19 +1,37 @@
 .slider {
   line-height: rem(22px);
   position: relative;
+
+  & .container {
+    position: relative;
+  }
 }
 .slider__item {
   display: flex;
+  padding-left: rem(56px);
 
   @include tablets {
     display: flex;
     flex-direction: column;
+    padding-left: 0;
   }
 }
 
 .slider__col {
   flex: 1;
   position: relative;
+
+  &--pic {
+    margin-right: rem(50px);
+
+    @include tablets {
+      margin-right: 0;
+    }
+
+    @include phones {
+      margin-bottom: rem(43px);
+    }
+  }
 
   @include tablets {
     display: flex;
@@ -66,7 +84,7 @@
 }
 
 .slider__container {
-  width: 78%;
+  width: 93%;
 
   @include tablets {
     display: flex;
@@ -145,35 +163,35 @@
   top: calc(50% - 23px);
 
   @include tablets {
-    top: calc(35% - 23px);
+    top: calc(31% - 22px);
   }
 
   @include phones {
-    top: calc(29% - 23px);
+    top: calc(29% - 35px);
   }
 }
 
 .slider__control-prev {
-  left: rem(45px);
+  left: rem(-27px);
 
   @include tablets {
     left: 15%;
   }
 
   @include phones {
-    left: rem(5px);
+    left: 0;
   }
 }
 
 .slider__control-next {
-  right: rem(45px);
+  right: rem(-27px);
 
   @include tablets {
     right: 15%;
   }
 
   @include phones {
-    right: rem(5px);
+    right: 0;
   }
 }
 
@@ -188,7 +206,7 @@
   padding: 33px 25px 31px 30px;
   position: absolute;
   top: 0;
-  left: 91px;
+  left: rem(91px);
   display: none;
 }
 
@@ -210,8 +228,8 @@
 }
 
 .dropdown__img {
-  width: 24px;
-  height: 14px;
+  width: rem(24px);
+  height: rem(14px);
   display: inline-flex;
   margin-right: rem(16px);
 }
